@@ -4,7 +4,6 @@
   "version": "0.0.0",
   "scripts": {
     "build": "pnpm -r build",
-    "dev:docs": "pnpm -F docs dev",
     "test": "pnpm -r run test",
     "lint": "pnpm -r run lint",
     "format:check": "prettier --check .",
@@ -13,7 +12,8 @@
     "clean": "pnpm -r run clean",
     "check": "prettier --check . && pnpm -r run lint && pnpm types && pnpm -r run test",
     "ci:publish": "pnpm publish -r --access public",
-    "release": "changeset version && pnpm -r build && changeset publish"
+    "release": "changeset version && pnpm -r build && changeset publish",
+    "dev:web": "pnpm -F @chatkit/example dev"
   },
   "devDependencies": {
     "@changesets/cli": "2.27.10",
