@@ -18,6 +18,12 @@ ChatKit is a framework-agnostic, drop-in chat solution.
 You don’t need to build custom UIs, manage low-level chat state, or patch together various features yourself.
 Just add the ChatKit component, give it a client token, and customize the chat experience as needed, no extra work needed.
 
+## Repository layout
+
+- `apps/example` – Next.js workspace showcasing dynamic chat routing, streaming API routes, and agent prompts.
+- `packages/chatkit` – Type definitions for the ChatKit web component.
+- `packages/chatkit-react` – React bindings that power the example app.
+
 ## Quickstart
 
 1. Generate a client token on your server.
